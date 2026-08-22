@@ -1,0 +1,91 @@
+.Header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.Title{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.GameTitle{
+    font-size: 2.5 rem;
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.GameInstructions{
+    font-size: 1rem;
+    color:  #a0aab5;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.2;
+}
+
+.Scoreboard{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.Scorebox{
+    background-color: #2c3e50;
+    border: 2px solid #4a5d73;
+    border-radius: 8px;
+    padding: 10px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 100px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.Scorebox.Best{
+    background-color: #1a252f;
+    border-color: #d4af37;
+}
+
+.Scorelabel{
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #a0aab5;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.Scorebox.Best.Scorelabel{
+    color: #d4af37;
+}
+
+.Value{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffff;
+}
+
+/*Responsive*/
+@media(max-width: 600px) {
+    .game-title{
+        font-size: 1.8rem;
+    }
+
+    .scoreboard{
+        gap: 10px;
+    }
+
+    .score-box{
+        min-width: 110px;
+        padding: 9px 15px;
+    }
+
+    .score-value{
+        font-size: 1.5rem;
+    }
+}
